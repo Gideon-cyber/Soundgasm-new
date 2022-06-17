@@ -31,9 +31,9 @@ function Search() {
   };
 
   return (
-    <div className="search relative h-[65rem] px-[5rem] bg-[#081730] pt-[18rem] pb-[10rem] mt-[-15rem] z-[1] flex items-center justify-between rounded-b-[5rem]">
+    <div className="search relative h-[65rem] tablet:h-auto px-[5rem] mobile:px-6 bg-[#081730] pt-[18rem] pb-[10rem] tablet:pb-[9rem] mt-[-15rem] z-[1] flex items-center justify-between rounded-b-[5rem] tablet:rounded-b-[3rem]">
       {/* Left side */}
-      <div className="left flex-1">
+      <div className="left flex-1 tablet:hidden">
         <motion.img
           variants={bg}
           animate={`${elementIsVisible}`}
@@ -79,7 +79,7 @@ function Search() {
         />
       </div>
       {/* Right side */}
-      <div className="right flex items-start flex-col justify-start flex-1 h-[100%] pt-[9rem]">
+      <div className="right flex items-start flex-col justify-start flex-1 h-[100%] pt-[9rem] tablet:pt-[4rem] text-sm">
         {/* Search bar */}
         <div className="searchbar flex justify-start w-[100%]">
           <input

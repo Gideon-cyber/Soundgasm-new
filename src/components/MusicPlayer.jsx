@@ -27,16 +27,16 @@ function MusicPlayer() {
       </div>
 
       {/* Lower Part */}
-      <div className="lowerPart flex items-center justify-between mt-5">
+      <div className="lowerPart flex items-center justify-between mt-5 text-sm">
         {/* track */}
-        <div className="track flex justify-between text-sm text-gray-500 flex-[2] items-center">
-          <span>2: 30</span>
+        <div className="track flex justify-between text-sm text-gray-500 flex-[2] items-center mobile:mr-2">
+          <span className="mobile:text-[0.65rem]">2: 30</span>
           <img
             src={require("../images/Group 9.png")}
             alt=""
-            className="w-[16rem]"
+            className="w-[16rem] mobile:w-[7.75rem]"
           />
-          <span>4: 05</span>
+          <span className="mobile:text-[0.65rem]">4: 05</span>
         </div>
         {/* Controls */}
         <div className="controls flex-1 flex items-center justify-around">

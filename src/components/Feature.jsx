@@ -18,7 +18,7 @@ function Feature({ icon, title }) {
       onChange={(isVisible) => setElementIsVisible(isVisible)}
       // minTopValue={300}
     >
-      <div className="feature flex flex-col items-center ml-[3rem] mr-[4rem] relative text-center">
+      <div className="feature flex flex-col items-center ml-[3rem] mr-[4rem] relative text-center tablet:mb-[3.5rem]">
         {/* icon */}
         <motion.div
           variants={variant}
@@ -39,7 +39,7 @@ function Feature({ icon, title }) {
           Listen to live music right from the comfort of your devices.
         </span>
 
-        <span className="text-[#e600ff] underline mt-[3rem] hover:cursor-pointer">
+        <span className="text-[#e600ff] underline mt-[3rem] tablet:mt-[1rem] hover:cursor-pointer">
           Learn More
         </span>
       </div>

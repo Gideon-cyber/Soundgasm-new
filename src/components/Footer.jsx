@@ -10,13 +10,13 @@ import CenterMenu from "./CenterMenu";
 
 function Footer() {
   const SocialStyle =
-    "rounded-full border-2 border-whit px-[8px] py-[4px] mr-[5rem]";
+    "rounded-full border-2 border-white px-[8px] py-[4px] m-auto";
 
   return (
-    <div className="footer flex flex-col items-center justify-start px-[5rem] bg-[#081730] h-[40rem] pt-[18rem] mt-[-10rem] relative z-[-1]">
+    <div className="footer flex flex-col items-center justify-start px-[5rem] mobile:px-6 bg-[#081730] h-[40rem] tablet:h-auto tablet:pb-[4.5rem] pt-[18rem] tablet:pt-[14rem] mt-[-10rem] relative z-[-1]">
       <CenterMenu className="items-center" />
       {/* Social icons */}
-      <div className="flex w-[100%] items-center justify-center mt-14">
+      <div className="flex w-[30%] tablet:w-[50%] mobile:w-[80%] items-center justify-center mt-14 tablet:mt-8">
         <div className={SocialStyle}>
           <i class="fa-brands fa-facebook-square"></i>
         </div>{" "}
@@ -26,13 +26,13 @@ function Footer() {
         <div className={SocialStyle}>
           <i class="fa-brands fa-linkedin"></i>
         </div>{" "}
-        <div className={SocialStyle + ` mr-[0]`}>
+        <div className={SocialStyle}>
           <i class="fa-brands fa-github"></i>
         </div>
       </div>
 
       {/* detail */}
-      <span className="text-[1rem] text-[#525d6e] px-[15rem] text-center mt-[4rem]">
+      <span className="text-[1rem] text-[#525d6e] px-[15rem] tablet:px-6 text-center mt-[4rem]">
         Experience the best quality music anywhere around the world for free.
         <br />
         Enjoy your favourite songs from your favourite artists today.

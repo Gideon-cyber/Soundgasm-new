@@ -42,10 +42,10 @@ function Hero() {
       onChange={(isVisible) => setElementIsVisible(isVisible)}
       minTopValue={300}
     >
-      <div className="wrapper bg-[#081730] flex items-center justify-between px-[5rem] rounded-b-[5rem] w-[100%] h-[35rem] relative z-[4]">
+      <div className="wrapper bg-[#081730] flex items-center justify-between px-[5rem] mobile:px-6 tablet:justify-center rounded-b-[5rem] tablet:rounded-b-[3rem] w-[100%] h-[35rem] tablet:h-[40rem] tablet:pt-4 relative z-[4]">
         {/* left side */}
-        <div className="headings flex flex-col items-start justify-center h-[100%] text-[3rem]">
-          <h1 className="font-bold leading-[4rem]">
+        <div className="headings flex flex-col items-start tablet:items-center justify-center h-[100%] text-[3rem] tablet:text-center">
+          <h1 className="font-bold leading-[4rem] mobile:leading-[2.5rem] mobile:text-[2.5rem] mb-4">
             You bring the passion, <br /> we bring the music.
           </h1>
           <p className="text-[15px] text-[#525d6e]">
@@ -59,7 +59,7 @@ function Hero() {
           </button>
         </div>
         {/* right side */}
-        <div className="images relative w-[50%]">
+        <div className="images relative w-[50%] tablet:hidden">
           <motion.img
             transition={{ duration: 1, type: "ease-out" }}
             variants={bg}

@@ -1,14 +1,25 @@
 import React from "react";
 
 function CenterMenu() {
-  const liStyle = "mr-[3rem] hover:cursor-pointer hover:text-[#525d6e]";
+  const liStyle =
+    "mr-[3rem] mobile:mr-0 mobile:leading-[0.5rem] hover:cursor-pointer hover:border-white md:inline-block  border-b-2 border-transparent duration-300";
+
+  const anchorStyle = "tablet:py-5 py-3 inline-block";
   return (
     <div className="menu flex">
-      <ul className="flex w-[100%] justify-between">
-        <li className={liStyle}>Home</li>
-        <li className={liStyle}>About</li>
-        <li className={liStyle}>New Releases</li>
-        <li className={liStyle + ` mr-0`}>Stream Live</li>
+      <ul className="flex tablet:text-sm text-center mobile:flex-col w-[100%] justify-center items-center backdrop-blur-lg z-10 tablet:static">
+        <li className={liStyle}>
+          <a className={anchorStyle}>Home</a>
+        </li>
+        <li className={liStyle}>
+          <a className={anchorStyle}>About</a>
+        </li>
+        <li className={liStyle}>
+          <a className={anchorStyle}>New Releases</a>
+        </li>
+        <li className={liStyle + ` mr-[0]`}>
+          <a className={anchorStyle}>Stream Live</a>
+        </li>
       </ul>
     </div>
   );
